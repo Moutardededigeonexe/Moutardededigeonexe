@@ -40,6 +40,13 @@
 
             .batterie {
                 margin-left: 40px;
+                transition: 0.3s;
+                animation-name: ease-out;
+            }
+
+            .batterie:hover {
+                transform: scale(2.3);
+                margin-left: 150px;
             }
 
             button {
@@ -58,28 +65,31 @@
                 background-color: black;
                 color: white;
                 font-size: 1.5em;
-                font-family: monospace;
+                font-family: helvetica;
                 padding: 4px;
                 padding-bottom: 28px;
                 border: none;
                 border-radius: 2px;
-                box-shadow: 0px 0px 3px #0077b6;
+
+                box-shadow: 0px 0px 10px 2px #0077b6;
+ 
                 cursor: pointer;
                 transition: 0.2s;
                 border-color: #0077b6; 
-                border: 12px;
+                margin-right: 20px;
             }
 
             button:hover {
                 transform: scale(1.05);
-                box-shadow: 0px 0px 14px 2px #0077b6;
+             
+                box-shadow: 0px 0px 50px #0077b6;
                 background-color: black;
             }
 
-             button:active {
+            button:active {
                 transform: scale(0.93);
-                box-shadow: 0px 0px 4px 1px #0077b6;
                 background-color: black;
+                box-shadow: 0px 0px 4px 1px #0077b6;
             }
             
             a {
@@ -114,7 +124,6 @@
 
             .tableau-ref:hover {
                 transform: scale(1.05);
-                animation: ease-out;
                 transition: 0.5s;
             }
 
@@ -137,7 +146,7 @@
              .tableau-1 {
                 box-shadow: 0px 0px 223px #0077b6;
             }
-    
+
         </style>
     </head>
     <body>
@@ -147,13 +156,13 @@
     </div>
     
         
-        <h1 id ="menu">Une de mes passions</h1>
+        <h1 id ="menu">La batterie</h1>
 
         <h3>Contient</h3>
         <ol>
-            <li id="1"><a href= "#commencement" >Quand j'ai commencé la musique ?</a></li>
-            <li id="2"><a href ="#monInstrument">Mon instrument</a></li>
-            <li id="3"><a href="#elements">Les éléments de la batterie</a></li>
+            <li class="1"><a href= "#commencement" >Quand j'ai commencé la musique ?</a></li>
+            <li class="2"><a href ="#monInstrument">Mon instrument</a></li>
+            <li class="3"><a href="#elements">Les éléments de la batterie</a></li>
         </ol>
         
         <div class="tableau-1" ; style="width: 600px; padding-top: 14 ; padding-bottom:4px;border: 6px solid #0077b6; text-align: left;background:#black;">
