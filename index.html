@@ -13,7 +13,7 @@
                 text-align: center;
             }
             body {
-                background-color: rgb(238, 235, 255);
+                background-color: black;
                 font-family: sans-serif;
                 margin-left: 40px;
                 margin-right: 20px;
@@ -21,17 +21,19 @@
             #paragraphe {
                 margin-left: 40px;
             }
-            #1 {
+            .1 {
                 color: rgb(30, 120, 48);
             }
             h2 {
                 margin-left: 12px;
+                color: white;
             }
             h4 {
                 margin-left: 12px;
+                color: white;
             }
-            batterie {
-                margin-left: 12px;
+            .batterie {
+                margin-left: 40px;
             }
             button {
                 position: fixed;
@@ -48,31 +50,32 @@
             
            
             button {
-                background-color: #f48c06;
+                background-color: black;
                 color: white;
                 font-size: 1.5em;
                 font-family: monospace;
                 padding: 4px;
                 border: none;
                 border-radius: 2px;
-                box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.5);
+                box-shadow: 0px 0px 3px #0077b6;
                 cursor: pointer;
                 transition: 0.2s;
-                outline: none;
+                border-color: #0077b6; 
+                border-size: 2px;
             }
             button:hover {
                 transform: scale(1.05);
-                box-shadow: 4px 5px 14px 2px rgba(0, 0, 0, 0.3);
-                background-color: #faa307;
+                box-shadow: 0px 0px 14px 2px #0077b6;
+                background-color: black;
             }
              button:active {
                 transform: scale(0.93);
-                box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
-                background-color: #e85d04;
+                box-shadow: 0px 0px 4px 1px #0077b6;
+                background-color: black;
             }
             
-            a:link {
-                color: rgb(0, 71, 79);
+            a {
+                color: white;
                 text-decoration: none;
             }
 
@@ -99,6 +102,18 @@
                 color: white;
                 text-align: center;
             }
+            p {
+                color: white;
+            }
+            .tableau-3 {
+                box-shadow: 0px 0px 223px #0077b6;
+            }
+             .tableau-2 {
+                box-shadow: 0px 0px 223px #0077b6;
+            }
+             .tableau-1 {
+                box-shadow: 0px 0px 223px #0077b6;
+            }
     
         </style>
     </head>
@@ -113,31 +128,31 @@
 
         <h3>Contient</h3>
         <ol>
-            <li id="1"><a href= "#commencement" >Quand j'ai                    commencé la musique ?</a></li>
+            <li id="1"><a href= "#commencement" >Quand j'ai commencé la musique ?</a></li>
             <li id="2"><a href ="#monInstrument">Mon instrument</a></li>
             <li id="3"><a href="#elements">Les éléments de la batterie</a></li>
         </ol>
         
-        <div style="width: 600px; padding-top ; padding-bottom:20px         ;border: 6px solid #03045e; text-align: left;background:           #48cae4;">
+        <div class="tableau-1" ; style="width: 600px; padding-top: 14 ; padding-bottom:4px;border: 6px solid #0077b6; text-align: left;background:#black;">
         <h2 id="commencement">1. Quand j'ai commencé la musique ?</h2>
         
-        <p id="paragraphe"> Je fais du piano depuis l'âge de 6 ans                 mais sans vraiment en apprendre les notes ou des                  partitions...
-                Plus tard, je me suis plus interessé pour la                      batterie, j'ai commencé a en jouer à 10 ans et je                  n'ai jamais arrêté depuis cette année. Je joue                    principalement du <strong>Jazz</strong> mais aussi            du <strong>Rock</strong>.
+        <p id="paragraphe"> Je fais du piano depuis l'âge de 6 ans mais sans vraiment en apprendre les notes ou des partitions...
+                Plus tard, je me suis plus interessé pour la batterie, j'ai commencé a en jouer à 10 ans et je n'ai jamais arrêté depuis cette année. Je joue principalement du <strong>Jazz</strong> mais aussi du <strong>Rock</strong>.
                 
                 Ce qui me plaît dans cet instrument, c'est la complexité et le nombres de combinaisons possibles que l'on peut jouer avec seulement deux pieds et deux mains.
             </p>
             </div>
          
-        <div style="width: 600px; padding-top: 14 ; padding-bottom:4px         ;border: 6px solid #023e8a; text-align: left;background:           #90e0ef;">
+        <div class="tableau-2" ; style="width: 600px; padding-top: 14 ; padding-bottom:4px;border: 6px solid #0077b6; text-align: left;background:#black;">
          <h2 id ="monInstrument">2. Mon instrument</h2>
          
-         <img src ="https://upload.wikimedia.org/wikipedia/commons/7/77/Drumkit.jpg"alt="batterie" height ="215" id ="batterie">
+         <img src ="https://upload.wikimedia.org/wikipedia/commons/7/77/Drumkit.jpg"alt="batterie" height ="215" class ="batterie">
          
          <p id="paragraphe">Une batterie est un instrument composé de fûts et de cymbales que l'on doit <em>taper</em> avec des baguettes et des pédales.
 La batterie fut inventé vers le XXeme siecle. Les différents éléments de la batterie existaient déjà avant mais séparément dans les orchestre ou les fanfares militaires. Le regroupement de ces différents éléments arriva grace au commencement du Jazz qui en donna la naissance.             
          </p>
          </div>
-         <div style="width: 600px; padding-top: 14 ; padding-bottom:4px         ;border: 6px solid #0077b6; text-align: left;background:           #caf0f8;">
+         <div class="tableau-3" ; style="width: 600px; padding-top: 14 ; padding-bottom:4px;border: 6px solid #0077b6; text-align: left;background:#black;">
          <h2 id="elements">3. Les éléments de la batterie</h2>
          
          <p id="paragraphe">Comme il l'a été dit tout à l'heure, les batteries comportes des fûts ainsi que des cymbales.
